@@ -1,0 +1,7 @@
+Python 3.7.0
+Flask 1.1.2
+Api Keys:
+  1. Openweather Api
+  2. Alphavantage Api
+  3. News Api
+Requires Internet connection for Bulma FrameWork
