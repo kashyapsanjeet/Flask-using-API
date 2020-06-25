@@ -96,7 +96,7 @@ def stocks():
         new_obj=Entry(API='Stocks',Date=now,query=st)
         db.session.add(new_obj)
         db.session.commit()
-        url='https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=1EDLTD4CDKL6EPYA'
+        url='https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=Alpha Vantage Key here'  #add alpha vantage key here
         r=requests.get(url.format(st)).json()
         stock_data=[]
         time=r['Meta Data']['3. Last Refreshed']
