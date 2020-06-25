@@ -40,7 +40,7 @@ def weather():
         new_obj=Entry(API='Weather',Date=now,query=city)
         db.session.add(new_obj)
         db.session.commit()
-        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=46b07ad99e69de2b7016418734daded5'
+        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=OPENWEATHERAPI-KEY'## Enter Openweather API key
         weather_data=[]
         r=requests.get(url.format(city)).json()
 
