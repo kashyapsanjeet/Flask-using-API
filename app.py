@@ -65,7 +65,7 @@ def news():
         new_obj=Entry(API='News',Date=now,query=country)
         db.session.add(new_obj)
         db.session.commit()
-        url = 'http://newsapi.org/v2/top-headlines?country={}&apiKey=bd395893b7e847b691047e61fd6b40c4'
+        url = 'http://newsapi.org/v2/top-headlines?country={}&apiKey=NEWS API KEY'  #Enter News Api key here
         r=requests.get(url.format(country)).json()
         news_data=[]
 
